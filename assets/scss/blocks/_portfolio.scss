@@ -1,0 +1,31 @@
+.portfolio__list-wrap {
+  width: 90%;
+}
+
+.portfolio__list {
+  @include list-style;
+  display: flex;
+  justify-content: center;
+  column-gap: 38px;
+}
+
+.portfolio__link {
+  @include link-style;
+  position: relative;
+}
+
+.portfolio__link-title {
+  position: absolute;
+  bottom: 50px;
+  right: -22px;
+  display: flex;
+  flex-direction: column;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 0.9;
+  text-shadow: 6px 2px 2px rgba(0, 0, 0, 0.95);
+
+  span:last-child {
+    margin-left: 20px;
+  }
+}

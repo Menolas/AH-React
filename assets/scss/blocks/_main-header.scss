@@ -1,0 +1,36 @@
+.main-header.container {
+  position: relative;
+  background-image: 
+    url("/assets/img/main-screen.png"),
+    url("/assets/img/body-bg.jpg");
+  background-repeat:
+    no-repeat,
+    no-repeat;
+  background-size: 
+    880px 880px,
+    100% 100%;
+  background-position: 
+    top -140px right 0,
+    top left;
+
+  &::after {
+    @include element-style(100%, 30px, $dark-theme-color);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.main-header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 42px;
+}
+
+.main-header .logo {
+  margin-right: 73px;
+}
+
+.main-header__menus-wrap {
+  display: flex;
+  align-items: center;
+}

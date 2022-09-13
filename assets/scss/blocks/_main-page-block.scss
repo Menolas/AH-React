@@ -1,0 +1,18 @@
+.main-page-block {
+  position: relative;
+  padding-top: 112px;
+  padding-bottom: 142px;
+
+  &::after {
+    @include element-style(100%, 30px, $dark-theme-color);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.main-page-block__title {
+  margin-top: 0;
+  margin-bottom: 86px;
+  text-align: center;
+  font-size: 48px;
+}
