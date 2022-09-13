@@ -1,0 +1,18 @@
+.social-nav__list {
+  @include list-style;
+  display: flex;
+  column-gap: 16px;
+}
+
+.social-nav__link {
+  @include link-style;
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  svg {
+    width: 28px;
+    height: 28px;
+    fill: white;
+  }
+}

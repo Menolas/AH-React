@@ -1,0 +1,30 @@
+.about {
+  padding-bottom: 192px;
+  text-align: center;
+}
+
+.main-page-block__title {
+  margin-bottom: 112px;
+}
+
+.about__img-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+
+  &::before {
+    @include element-style(123%, 100%, transparent);
+    left: 50%;
+    top: 50px;
+    border: 2px solid white;
+    transform: translate(-50%, 0);
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
