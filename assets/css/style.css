@@ -713,6 +713,14 @@ input::placeholder {
   row-gap: 16px;
 }
 
+.main-footer__middle-section .logo {
+  width: 60px;
+}
+
+.main-footer__middle-section .logo img {
+  width: 60px;
+}
+
 .handlers {
   position: relative;
   margin: 0 auto;
