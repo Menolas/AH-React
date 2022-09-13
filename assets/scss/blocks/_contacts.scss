@@ -1,6 +1,11 @@
 .contacts.container {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
+
+  &::after {
+    display: none;
+  }
 }
 
 .contacts__map-wrap {

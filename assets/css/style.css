@@ -253,7 +253,7 @@ body {
 
 .main-page-block__title {
   margin-top: 0;
-  margin-bottom: 86px;
+  margin-bottom: 56px;
   text-align: center;
   font-size: 48px;
 }
@@ -313,10 +313,6 @@ body {
 .about {
   padding-bottom: 192px;
   text-align: center;
-}
-
-.main-page-block__title {
-  margin-bottom: 112px;
 }
 
 .about__img-wrap {
@@ -649,6 +645,11 @@ input::placeholder {
 .contacts.container {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
+}
+
+.contacts.container::after {
+  display: none;
 }
 
 .contacts__map-wrap {
