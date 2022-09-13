@@ -7,7 +7,7 @@
 .booking__img-wrap {
   width: 615px;
   height: 657px;
-  background-image: url("/assets/img/booking.jpg");
+  background-image: url("assets/img/booking.jpg");
   background-repeat: no-repeat;
   background-position: top -120px left;
   background-size: 615px auto;
@@ -18,7 +18,7 @@
   width: 615px;
   height: 657px;
   color: black;
-  background-image: url("/assets/img/form-background.png");
+  background-image: url("assets/img/form-background.png");
   background-repeat: no-repeat;
   background-color: $light-theme-color;
 }
