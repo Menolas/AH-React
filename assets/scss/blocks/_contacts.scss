@@ -1,0 +1,26 @@
+.contacts.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contacts__map-wrap {
+  position: relative;
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.contacts__content {
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  padding: 70px 46px;
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: $light-theme-color;
+  transform: translate(0, -50%);
+}
