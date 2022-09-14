@@ -3,12 +3,12 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1000px;
+  width: 100%;
 }
 
 .faq__item {
   position: relative;
-  padding: 20px 0;
+  padding: 16px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.65);
 
   &:last-child {
@@ -24,7 +24,8 @@
 
 .faq__item-title {
   margin: 0;
-  font-size: 24px;
+  width: 80%;
+  font-size: 18px;
   font-weight: 600;
 }
 
@@ -46,4 +47,43 @@
     bottom: 3px;
     left: 4px;
   }
+}
+
+@media (min-width: 990px) {
+
+  .faq__list {
+    width: 1000px;
+  }
+  
+  .faq__item {
+    padding: 20px 0;
+
+    p {
+      
+    }
+  }
+  
+  .faq__item-title {
+    font-size: 24px;
+  }
+  
+    .faq__item-handle {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 25px;
+      height: 11px;
+      transform: translate(0, -50%);
+  
+      &::before {
+        @include element-style(16px, 16px, transparent);
+        border: 2px solid white;
+        border-radius: 2px;
+        border-left: none;
+        border-top: none;
+        transform: rotate(45deg) skew(-4deg, -4deg);
+        bottom: 3px;
+        left: 4px;
+      }
+    }
 }

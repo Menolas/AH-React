@@ -7,10 +7,12 @@
   row-gap: 60px;
   margin: 0 auto;
   width: 100%;
+  max-width: 100%;
 }
 
 .services__item {
   width: 100%;
+  max-width: 100%;
 }
 
 .services__link {
@@ -28,9 +30,11 @@
 
 .services__article-img-wrap {
   margin-bottom: 42px;
+  max-width: 100%;
 
   img {
     width: 100%;
+    max-width: 100%;
     height: auto;
   }
 }
