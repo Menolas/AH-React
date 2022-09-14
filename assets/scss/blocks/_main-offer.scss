@@ -1,11 +1,11 @@
 .main-offer {
   display: flex;
-  padding: 161px 0 194px;
+  padding: 20px 0 170px;
 }
 
 .main-offer__content-wrap {
   position: relative;
-  padding-left: 37px;
+  padding-left: 17px;
   text-align: right;
   text-transform: uppercase;
   line-height: 1;
@@ -13,23 +13,23 @@
 
 .main-offer__decorative-text {
   position: absolute;
-  left: -58px;
-  top: 62px;
-  font-size: 18px;
-  font-weight: 600;
+  left: -28px;
+  top: 32px;
+  font-size: 9px;
+  font-weight: 500;
   transform: rotate(-90deg);
 
   &::before {
-    @include element-style(45px, 2px, white);
+    @include element-style(10px, 1px, white);
     top: 50%;
-    left: -10px;
+    left: -2px;
     transform: translate(-100%, -50%);
   }
 }
 
 .main-offer h1 {
   margin: 0;
-  font-size: 100px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 0.9;
 }
@@ -38,6 +38,45 @@
   display: block;
   margin-top: 10px;
   text-align: left;
-  font-size: 28px;
+  font-size: 10px;
   font-weight: 600;
+}
+
+@media(min-width: 990px) {
+
+  .main-offer {
+    padding: 161px 0 194px;
+  }
+
+  .main-offer__content-wrap {
+    padding-left: 37px;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .main-offer__decorative-text {
+    left: -58px;
+    top: 62px;
+    font-size: 18px;
+    font-weight: 600;
+    transform: rotate(-90deg);
+
+    &::before {
+      @include element-style(45px, 2px, white);
+      top: 50%;
+      left: -10px;
+      transform: translate(-100%, -50%);
+    }
+  }
+  
+  .main-offer h1 {
+    font-size: 100px;
+  }
+
+  .main-offer__motto {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 28px;
+  }
 }

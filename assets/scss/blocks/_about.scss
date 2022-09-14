@@ -1,18 +1,18 @@
 .about {
-  padding-bottom: 192px;
+  padding-bottom: 86px;
   text-align: center;
 }
 
 .about__img-wrap {
   position: relative;
   margin: 0 auto;
-  width: 400px;
-  height: 400px;
+  width: 260px;
+  height: 260px;
 
   &::before {
     @include element-style(123%, 100%, transparent);
     left: 50%;
-    top: 50px;
+    top: 30px;
     border: 2px solid white;
     transform: translate(-50%, 0);
   }
@@ -21,6 +21,23 @@
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: auto;
     z-index: 1;
+  }
+}
+
+@media(min-width: 990px) {
+  .about {
+    padding-bottom: 192px;
+  }
+
+  .about__img-wrap {
+    width: 400px;
+    height: 400px;
+
+    &::before {
+      top: 50px;
+    }
   }
 }
