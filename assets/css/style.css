@@ -26,6 +26,7 @@ body {
           background-size: 100% 100%;
   background-position: top left;
   background-color: black;
+  overflow: hidden;
 }
 
 @media (min-width: 990px) {
@@ -52,6 +53,7 @@ body {
           background-size: 100% 100%;
   background-position: top left;
   background-color: black;
+  overflow: hidden;
 }
 
 @media (min-width: 990px) {
@@ -610,11 +612,11 @@ body {
           column-gap: 4%;
   row-gap: 60px;
   margin: 0 auto;
-  max-width: 1102px;
+  width: 100%;
 }
 
 .services__item {
-  width: 430px;
+  width: 100%;
 }
 
 .services__link {
@@ -635,13 +637,64 @@ body {
 }
 
 .services__article-img-wrap img {
-  width: 430px;
+  width: 100%;
+  height: auto;
 }
 
 .services__item-list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+@media (min-width: 990px) {
+  .services__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 4%;
+       -moz-column-gap: 4%;
+            column-gap: 4%;
+    row-gap: 60px;
+    margin: 0 auto;
+    max-width: 1102px;
+  }
+  .services__item {
+    width: 430px;
+  }
+  .services__link {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+  }
+  .services__article h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  .services__article-img-wrap {
+    margin-bottom: 42px;
+  }
+  .services__article-img-wrap img {
+    width: 430px;
+  }
+  .services__item-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
 }
 
 .faq__list {
