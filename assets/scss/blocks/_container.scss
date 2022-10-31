@@ -6,15 +6,15 @@
   background-image: url("../img/body-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-position: top center; 
-  background-color: black;
-  overflow: hidden;  
+  background-position: top center;
+  background-color: $dark-theme-color;
+  overflow: hidden;
 }
 
 @media (min-width: 990px) {
   .container {
     padding: 0 70px;
-    width: 1440px;
+    max-width: 1440px;
     background-image: url("../img/body-bg.jpg");
   }
 }

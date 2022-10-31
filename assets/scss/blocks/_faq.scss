@@ -1,5 +1,4 @@
 .faq__list {
-  @include list-style;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -39,7 +38,7 @@
 
   &::before {
     @include element-style(16px, 16px, transparent);
-    border: 2px solid white;
+    border: $light-border;
     border-radius: 2px;
     border-left: none;
     border-top: none;
@@ -54,19 +53,19 @@
   .faq__list {
     width: 1000px;
   }
-  
+
   .faq__item {
     padding: 20px 0;
 
     p {
-      
+
     }
   }
-  
+
   .faq__item-title {
     font-size: 24px;
   }
-  
+
     .faq__item-handle {
       position: absolute;
       right: 0;
@@ -74,7 +73,7 @@
       width: 25px;
       height: 11px;
       transform: translate(0, -50%);
-  
+
       &::before {
         @include element-style(16px, 16px, transparent);
         border: 2px solid white;

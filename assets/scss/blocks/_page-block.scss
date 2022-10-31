@@ -1,4 +1,4 @@
-.main-page-block {
+.page-block {
   position: relative;
   padding-top: 40px;
   padding-bottom: 56px;
@@ -10,7 +10,7 @@
   }
 }
 
-.main-page-block__title {
+.page-block__title {
   margin-top: 0;
   margin-bottom: 32px;
   text-align: center;
@@ -19,7 +19,7 @@
 
 @media(min-width: 990px) {
 
-  .main-page-block {
+  .page-block {
     position: relative;
     padding-top: 112px;
     padding-bottom: 142px;
@@ -31,7 +31,7 @@
     }
   }
 
-  .main-page-block__title {
+  .page-block__title {
     margin-top: 0;
     margin-bottom: 56px;
     text-align: center;
