@@ -1,10 +1,17 @@
 .main-offer {
   display: flex;
-  padding: 20px 0 170px;
+  padding: 30px 0 84px;
+
+  .main-header__btn {
+    margin-top: 25px;
+    margin-left: -10px;
+  }
 }
 
 .main-offer__content-wrap {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-left: 17px;
   text-align: right;
   text-transform: uppercase;
@@ -13,8 +20,8 @@
 
 .main-offer__decorative-text {
   position: absolute;
-  left: -28px;
-  top: 32px;
+  left: -22px;
+  top: 22px;
   font-size: 9px;
   font-weight: 500;
   transform: rotate(-90deg);
@@ -27,9 +34,9 @@
   }
 }
 
-.main-offer h1 {
+.main-offer__title {
   margin: 0;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 0.9;
 }
@@ -37,7 +44,7 @@
 .main-offer__motto {
   display: block;
   margin-top: 10px;
-  text-align: left;
+  text-align: right;
   font-size: 10px;
   font-weight: 600;
 }
@@ -45,7 +52,12 @@
 @media(min-width: 990px) {
 
   .main-offer {
-    padding: 161px 0 194px;
+    padding: 145px 0 93px;
+
+    .main-header__btn {
+      margin-top: 42px;
+      margin-left: -10px;
+    }
   }
 
   .main-offer__content-wrap {
@@ -69,14 +81,16 @@
       transform: translate(-100%, -50%);
     }
   }
-  
+
   .main-offer h1 {
     font-size: 100px;
   }
 
   .main-offer__motto {
     margin-top: 10px;
-    text-align: left;
+    text-align: right;
     font-size: 28px;
+    letter-spacing: 1px;
   }
 }
+

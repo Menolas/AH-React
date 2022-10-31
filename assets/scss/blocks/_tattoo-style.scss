@@ -1,0 +1,21 @@
+.tattoo-style {
+  line-height: 1.4;
+  background-color: $dark-theme-color;
+
+  &::after {
+    display: none;
+  }
+}
+
+.tattoo-style__title {
+  text-align: left;
+}
+
+@media (min-width: 990px) {
+
+  .tattoo-style {
+    display: flex;
+    column-gap: 60px;
+    padding-bottom: 112px;
+  }
+}

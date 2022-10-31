@@ -13,7 +13,7 @@
     @include element-style(123%, 100%, transparent);
     left: 50%;
     top: 30px;
-    border: 2px solid white;
+    border: $light-border;
     transform: translate(-50%, 0);
   }
 

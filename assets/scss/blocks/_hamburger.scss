@@ -8,6 +8,7 @@
     width: 50px;
     height: 2px;
     background-color: white;
+    transition: all 0.3s ease;
 
     &::before,
     &::after {
@@ -17,6 +18,7 @@
       left: 0;
       height: 2px;
       background-color: white;
+      transition: all 0.3s ease;
     }
 
     &::before {

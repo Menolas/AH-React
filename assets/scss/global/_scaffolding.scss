@@ -1,6 +1,10 @@
 body {
   margin: 0;
   font-family: 'Monseratt', sans-serif;
-  color: $light-theme-color;
+  color: $light-text;
   background-color: $light-theme-color;
+}
+
+.list {
+  @include list-style;
 }
