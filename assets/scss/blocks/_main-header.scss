@@ -19,8 +19,9 @@
 
   &.main-header--index {
     position: relative;
-    background-image: url("../img/main-screen-bw.png"),
-    url("../img/body-bg-mobile.jpg");
+    background-image:
+            url("../img/main-screen-bw.png"),
+            url("../img/body-bg-mobile.jpg");
     background-repeat: no-repeat,
     no-repeat;
     background-size: 400px 400px,
@@ -41,6 +42,9 @@
 
     .logo {
       position: static;
+      top: unset;
+      left: unset;
+      transform: none;
       margin-right: 20px;
     }
 
